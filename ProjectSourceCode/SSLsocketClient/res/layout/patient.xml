@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Medical Record"
+        android:textSize="40dp">
+    </TextView>
+    
+    <GridLayout 
+    	android:layout_below="@+id/textViewTitle"
+    	android:layout_marginTop="30dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:columnCount="2"
+    	android:orientation="horizontal"
+    	android:rowCount="9" >
+
+	    <TextView
+	        android:id="@+id/textViewID"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="0"
+	        android:text="ID: "
+	        android:textSize="20dp" />
+
+	    <TextView
+	        android:id="@+id/textViewIDNum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="0"
+	        android:text="user id in the system"
+	        android:textSize="20dp" />
+
+	    <TextView
+	        android:id="@+id/textViewName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="1"
+	        android:text="Name: "
+	        android:textSize="20dp" />
+	
+	    <EditText
+	        android:id="@+id/editTextName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_row="1"
+	        android:text="user&apos;s name" />
+	
+	    <TextView
+	        android:id="@+id/textViewAge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="2"
+	        android:text="Age: "
+	        android:textSize="20dp" />
+	
+	    <EditText
+	        android:id="@+id/editTextAge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_row="2"
+	        android:inputType="number"
+	        android:text="10" />
+
+	    <TextView
+	        android:id="@+id/textViewSex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="3"
+	        android:text="Sex: "
+	        android:textSize="20dp" />
+	
+	    <EditText
+	        android:id="@+id/editTextSex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_row="3"
+	        android:text="user&apos;s sex" />
+	
+	    <TextView
+	        android:id="@+id/textViewMedAllergy"
+	        android:layout_width="110dp"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="4"
+	        android:text="Medication Allergies: "
+	        android:textSize="20dp" />
+	
+	    <EditText
+	        android:id="@+id/editTextMedAllergy"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_row="4"
+	        android:ems="10"
+	        android:inputType="textMultiLine"
+	        android:minLines="3"
+	        android:maxLines="3"
+	        android:scrollbars="vertical"
+	        android:text="user&apos;s medication allergies" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <TextView
+	        android:id="@+id/textViewSSN"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="5"
+	        android:text="SSN: "
+	        android:textSize="20dp" />
+	
+	    <EditText
+	        android:id="@+id/editTextSSN"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_row="5"
+	        android:inputType="number"
+	        android:text="123456789" />
+	
+	    <TextView
+	        android:id="@+id/textViewInsurance"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_column="0"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="3dp"
+	        android:layout_row="6"
+	        android:text="Insurance Company: "
+	        android:textSize="20dp" />
+	
+	    <EditText
+	        android:id="@+id/editTextInsurance"
+	        android:layout_column="1"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_row="6"
+	        android:ems="10"
+	        android:minLines="3"
+	        android:maxLines="3"
+	        android:scrollbars="vertical"
+	        android:inputType="textMultiLine"
+	        android:text="user&apos;s Insurance Company. It is very strange to tell the truth, isn&apos;t it?" >
+	
+	        <requestFocus />
+	    </EditText>
+
+	    <RelativeLayout
+	        android:layout_column="1"
+	        android:layout_gravity="left|top"
+	        android:layout_row="8"
+	        android:layout_width="230dp"
+	    	android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/buttonUpdate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:textSize="20dp"
+	            android:text="Update" />
+	
+	        <Button
+	            android:id="@+id/buttonUserLogOut"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/buttonUpdate"
+	            android:textSize="20dp"
+	            android:text="Log out" />
+	
+	    </RelativeLayout>
+
+	</GridLayout>
+       
+</RelativeLayout>
